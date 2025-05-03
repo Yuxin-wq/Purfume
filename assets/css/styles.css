@@ -48,3 +48,24 @@ body, html {
         gap: 10%; /* 改用百分比间距 */
     }
 }
+
+/* 图片链接容器 */
+.ingredient-link {
+    display: block;
+    overflow: hidden;
+}
+
+/* 图片动效 */
+.ingredient-img {
+    transition: transform 0.3s ease, opacity 0.2s ease;
+    width: 100%;
+    height: auto;
+}
+
+.ingredient-link:hover .ingredient-img {
+    transform: scale(1.05);
+}
+
+.ingredient-link:active .ingredient-img {
+    opacity: 0.8;
+}
