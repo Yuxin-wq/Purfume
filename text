@@ -1,13 +1,22 @@
 my-website/
 ├── assets/               # 存放公共资源
-│   ├── css/              # 全局样式
+│   ├── css/
+│   │   ├── ingredient-style.css    # 原料样式
+│   │   ├── ingredient rose-style.css    # 原料样式
+│   │   └── styles.css    # 全局样式
 │   ├── js/               # 全局脚本
 │   ├── images/           # 公共图片
 │   │   ├── ingredient1.png    # 原料图片1（366px × 366px）
 │   │   ├── ingredient2.png    # 原料图片2
-│   │   └── ingredient3.png    # 原料图片3
+│   │   └── ingredient3.png 
+│   │   └── digital-rose.png 
+│   │   └── digital.png 
+│   │   └── production.png 
+│   │   └── production-rose.png
 │   └── videos/           # 公共视频
 │       └── background.mp4     # 背景视频
+│       └── ingredient-rose-Video.mp4     # 原料视频
+│       └── ingredient-Video.mp4     # 原料视频
 ├── pages/                # 存放所有HTML页面
 │   ├── 首页.html        # 首页
 │   ├── 情绪结果1.html   # 情绪结果页1页    

@@ -1,0 +1,116 @@
+/* 全局设置 */
+body {
+    margin: 0;
+    background-color: #000000; /* 纯黑背景 */
+    overflow: hidden; /* 隐藏滚动条 */
+    height: 100vh;
+    color: #FFFFFF; /* 所有字体为纯白 */
+}
+
+/* 左侧视频容器 */
+.video-container {
+    width: 50vw; /* 视口宽度的50% */
+    height: 100vh;
+    float: left; /* 左浮动实现分屏 */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 视频填充容器 */
+}
+
+/* 右侧内容容器 */
+.content-container {
+    width: 50vw;
+    height: 100vh;
+    float: left; /* 与视频并列 */
+    padding: 5%; /* 四周统一留白 */
+    overflow-y: auto; /* 允许滚动 */
+    box-sizing: border-box;
+}
+
+/* 文字部分通用样式 */
+.text-section, .video-section, .production-section {
+    margin-bottom: 40px; /* 分区间距 */
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.9;
+    margin-bottom: 20px; /* 保留原有下边距 */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* 成分图片区（替换原视频区） */
+.video-section img {
+    width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+/* 单张产区图片样式（与成分图片一致） */
+.single-production-image {
+    width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+/* 删除原有的产区网格样式 */
+.production-grid {
+    display: none; /* 或直接删除此规则 */
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 左上角固定文字 */
+.Rose-title {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    z-index: 1000; /* 确保显示在最上层 */
+    margin: 0;
+    pointer-events: none; /* 避免遮挡交互 */
+}
+
+/* 退出箭头 */
+.exit-arrow {
+    position: fixed;
+    top: 90px; /* 在文字下方40px处 */
+    left: 50px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.exit-arrow:hover {
+    opacity: 1;
+}
