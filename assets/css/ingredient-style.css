@@ -61,17 +61,36 @@ p {
     object-fit: cover;
 }
 
-/* 单张产区图片样式（与成分图片一致） */
-.single-production-image {
+/* 产区图片容器样式 */
+.region-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
     width: 100%;
-    max-height: 300px;
-    margin-top: 10px;
+    margin-top: 30px;
+}
+
+/* 单张图片 + 文字容器 */
+.region-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平居中 */
+}
+
+/* 图片样式 */
+.region-item img {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 }
 
-/* 删除原有的产区网格样式 */
-.production-grid {
-    display: none; /* 或直接删除此规则 */
+/* 文字样式 */
+.region-text {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px; /* 文字与图片间距 */
+    font-weight: 500; /* 可选：加粗 */
 }
 
 @font-face {
