@@ -47,20 +47,21 @@ h2 {
     margin-bottom: 20px; /* 保留原有下边距 */
 }
 
-p {
+p, .bar-label, .region-text {
     font-size: 16px;
     line-height: 1.6;
-    opacity: 0.9;
+    opacity: 0.8; /* 设置文字透明度 */
 }
 
 /* 柱状图表样式 */
 .bar-chart {
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* 柱子底部对齐 */
+    align-items: flex-end;
     height: 300px;
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 40px; /* 调整此值以改变与上方标题的距离 */
+    margin-bottom: 20px; /* 新增或调整此值以改变与下方标题的距离 */
     position: relative;
 }
 
@@ -160,4 +161,19 @@ p {
 
 .exit-arrow:hover {
     opacity: 1;
+}
+
+/* 右上角固定文字 */
+.floral-title {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    pointer-events: none;
+    z-index: 1000;
 }
