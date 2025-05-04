@@ -1,0 +1,187 @@
+/* 全局设置 */
+body {
+  margin: 0;
+  background-color: #000000; /* 纯黑背景 */
+  overflow: hidden; /* 隐藏滚动条 */
+  height: 100vh;
+  color: #ffffff; /* 所有字体为纯白 */
+}
+
+/* 左侧视频容器 */
+.video-container {
+  width: 50vw; /* 视口宽度的50% */
+  height: 100vh;
+  float: left; /* 左浮动实现分屏 */
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 视频填充容器 */
+}
+
+/* 右侧内容容器 */
+.content-container {
+  width: 50vw;
+  height: 100vh;
+  float: left; /* 与视频并列 */
+  padding: 5%; /* 四周统一留白 */
+  overflow-y: auto; /* 允许滚动 */
+  box-sizing: border-box;
+}
+
+/* 文字部分通用样式 */
+.text-section,
+.video-section,
+.production-section {
+  margin-bottom: 40px; /* 分区间距 */
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.9;
+  margin-bottom: 20px; /* 保留原有下边距 */
+}
+
+p,
+.bar-label,
+.region-text {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.8; /* 设置文字透明度 */
+}
+
+/* 柱状图表样式 */
+.bar-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 300px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%; /* 确保图表占满容器宽度 */
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 20%; /* 设置固定宽度比例，确保所有bar-container相同宽度 */
+  box-sizing: border-box; /* 确保padding和border包含在宽度内 */
+}
+
+.bar {
+  width: 40px;
+  height: calc(100% - 20px);
+  background: linear-gradient(to top, #000000 10%, #c67df5 90%);
+  border-radius: 0;
+}
+
+.bar-label {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  top: 10px;
+  width: 100%; /* 确保文字宽度适应容器 */
+  white-space: nowrap; /* 防止文字换行 */
+}
+
+/* 产区图片容器样式 */
+.region-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* 单张图片 + 文字容器 */
+.region-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平居中 */
+}
+
+/* 图片样式 */
+.region-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* 文字样式 */
+.region-text {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px; /* 文字与图片间距 */
+  font-weight: 500; /* 可选：加粗 */
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 左上角固定文字 */
+.Chamomile-title {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  z-index: 1000; /* 确保显示在最上层 */
+  margin: 0;
+  pointer-events: none; /* 避免遮挡交互 */
+}
+
+/* 退出箭头 */
+.exit-arrow {
+  position: fixed;
+  top: 90px; /* 在文字下方40px处 */
+  left: 50px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.exit-arrow:hover {
+  opacity: 1;
+}
+
+/* 右上角固定文字 */
+.floral-title {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
