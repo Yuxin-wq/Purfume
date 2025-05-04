@@ -69,3 +69,18 @@ body, html {
 .ingredient-link:active .ingredient-img {
     opacity: 0.8;
 }
+
+.footer-text {
+    position: absolute; /* 使用绝对定位 */
+    top: 15%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -100%); /* 调整位置到图片上方 */
+    z-index: 1; /* 确保在视频背景之上 */
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.9;
+    font-size: 36px;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5); /* 添加背景色以查看文字是否被遮挡 */
+
+}
