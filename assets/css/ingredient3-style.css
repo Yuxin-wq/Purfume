@@ -82,7 +82,7 @@ p,
 .bar {
   width: 40px;
   height: calc(100% - 20px);
-  background: linear-gradient(to top, #000000 10%, #c67df5 90%);
+  background: linear-gradient(to top, #000000 10%, #4C7599 90%);
   border-radius: 0;
 }
 
@@ -172,7 +172,7 @@ p,
 }
 
 /* 右上角固定文字 */
-.floral-title {
+.Herbal-title {
   position: fixed;
   top: 50px;
   right: 50px;
