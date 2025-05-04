@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>原料介绍</title>
-    <link rel="stylesheet" href="../assets/css/ingredient rose-style.css">
+    <link rel="stylesheet" href="../assets/css/ingredient2-style.css">
 </head>
 <body>
     <!-- 左上角文字和退出箭头 -->
@@ -14,7 +14,7 @@
     <!-- 左侧视频容器 -->
     <div class="video-container">
         <video autoplay loop muted playsinline>
-            <source src="../assets/videos/ingredient-rose-Video.mp4" type="video/mp4">
+            <source src="../assets/videos/ingredient2-Video.mp4" type="video/mp4">
             您的浏览器不支持视频播放
         </video>
     </div>
@@ -27,17 +27,56 @@
             <p>玫瑰精油（Rosa damascena）不仅以其优雅的香气闻名，更在芳香疗法中被广泛应用于情绪调节和心理疗愈。​其主要活性成分——香茅醇（citronellol）和香叶醇（geraniol）——通过嗅觉通路作用于大脑边缘系统，调节神经递质活动，从而带来多方面的情绪疗愈效果。
         </section>
 
-        <!-- 2. 成分图片 -->
-        <section class="video-section">
-            <h2>MAIN INGREDIENTS</h2>
-            <img src="../assets/images/digital-rose.png" alt="主要成分">
-        </section>
+        <h2>MAIN INGREDIENTS</h2>
+        <!-- 替换为柱状图表 -->
+        <div class="bar-chart">
+            <div class="bar-container">
+                <div class="bar" style="height: 100%; background: linear-gradient(to top, #000000 10%, #C67DF5 90%);"></div>
+                <p class="bar-label">Citronellol</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 65%; background: linear-gradient(to top, #000000 10%, #C67DF5 90%);"></div>
+                <p class="bar-label">Nonadecane</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 95%; background: linear-gradient(to top, #000000 10%, #C67DF5 90%);"></div>
+                <p class="bar-label">Geraniol</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 40%; background: linear-gradient(to top, #000000 10%, #C67DF5 90%);"></div>
+                <p class="bar-label">linalool</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 55%; background: linear-gradient(to top, #000000 10%, #C67DF5 90%);"></div>
+                <p class="bar-label">nerol</p>
+            </div>
+        </div>
 
         <!-- 3. 产区图片（替换为单张） -->
         <section class="production-section">
             <h2>MAIN PRODUCTION AREA</h2>
-            <img src="../assets/images/production-rose.png" alt="主产区" class="single-production-image">
-        </section>
+            <!-- 四张产区图片 + 文字 -->
+            <div class="region-container">
+                <div class="region-item">
+                    <img src="../assets/images/region1-玫瑰.jpg" alt="产区1">
+                    <p class="region-text">Bulgaria</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region2-玫瑰.jpg" alt="产区2">
+                    <p class="region-text">Turkey</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region3-玫瑰.jpg" alt="产区3">
+                    <p class="region-text">Morocco</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region4-玫瑰.jpg" alt="产区4">
+                    <p class="region-text">Iran</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="floral-title">floral 花香调</div>
     </div>
 </body>
 </html>
