@@ -1,0 +1,177 @@
+/* 全局重置 */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 全屏视频背景 */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* 字体声明 */
+@font-face {
+    font-family: 'Caesar Dressing';
+    src: url('../fonts/CaesarDressing-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
+/* 顶部文字样式 */
+.top-text {
+    position: fixed;
+    top: 50px;
+    left: 55px;
+    right: 55px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.left-text, .right-text {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+/* 中央文字组样式 */
+.center-text {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    z-index: 1;
+}
+
+.text-line1 {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+.text-line2 {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+.text-line3 {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+/* 主标题样式 */
+.main-title {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "Caesar Dressing", sans-serif;
+    font-size: 158px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117.054%;
+    letter-spacing: 38.4px;
+    filter: blur(1px);
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-title span {
+    display: block;
+    white-space: nowrap;
+}
+
+/* 底部文字样式 */
+.bottom-text {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 1;
+}
+
+.bottom-line1, .bottom-line2 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Start按钮样式 */
+.start-button {
+    position: fixed;
+    bottom: 50px;
+    right: 55px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.start-text {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.arrow-right {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 1;
+    margin-left: 10px;
+}

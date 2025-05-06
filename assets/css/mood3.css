@@ -1,0 +1,244 @@
+/* 全局设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: #000000;
+}
+
+/* 视频背景容器 */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 右侧信息框 */
+.result-container {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 420px;
+    height: 750px;
+    background: rgba(0, 0, 0, 0.70);
+    box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.25);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+/* 情绪标题 */
+.mood-title {
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117.054%;
+    letter-spacing: 5.4px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 情绪关键词 */
+.mood-keyword {
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0;
+}
+
+/* 雷达图区域 */
+.radar-chart {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.radar-chart img {
+    width: 260px;
+    height: 260px;
+    object-fit: contain;
+}
+
+/* 情绪评分区域 */
+.mood-scores {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.scores-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mood-score {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mood-label {
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 30px;
+    text-align: center;
+}
+
+.stars {
+    color: #FFF;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* 情绪描述文字 */
+.mood-description {
+    margin-top: 20px;
+    text-align: left;
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 8px;
+}
+
+.mood-description p {
+    margin-bottom: 5px;
+}
+
+.mood-description p:last-child {
+    margin-top: 2px;
+    opacity: 0.8;
+}
+
+/* 底部文字 */
+.mood-footer {
+    margin-top: auto;
+    text-align: center;
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+/* 顶部文字 */
+.top-text {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 100;
+}
+
+/* 右上角导航 */
+.nav-link {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+}
+
+.nav-link span {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-link .arrow {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.nav-link .arrow:hover {
+    transform: translateX(5px);
+}
+
+/* 底部文字 */
+.bottom-text {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 100;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.bottom-text:hover {
+    opacity: 0.8;
+}
+
+.bottom-text a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: opacity 0.3s ease;
+}
+
+.bottom-text a:hover {
+    opacity: 0.8;
+}

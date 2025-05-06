@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>香水原料目录</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .to-qi-arrow-btn {
+            position: fixed;
+            right: 32px;
+            bottom: 32px;
+            z-index: 1000;
+            background: rgba(0,0,0,0.6);
+            border: none;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .to-qi-arrow-btn:hover {
+            background: rgba(76,117,153,0.8);
+        }
+        .to-qi-arrow-btn svg {
+            width: 32px;
+            height: 32px;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2.5;
+        }
+    </style>
 </head>
 <body>
     <!-- 全屏视频背景 -->

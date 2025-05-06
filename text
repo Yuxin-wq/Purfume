@@ -3,7 +3,8 @@ my-website/
 │   ├── css/
 │   │   ├── ingredient-style.css    # 原料样式
 │   │   ├── ingredient rose-style.css    # 原料样式
-│   │   └── styles.css    # 全局样式
+│   │   └── styles.cs样式
+        └── 首页.css
 │   ├── js/               # 全局脚本
 │   ├── images/           # 公共图片
 │   │   ├── ingredient1.png    # 原料图片1（366px × 366px）

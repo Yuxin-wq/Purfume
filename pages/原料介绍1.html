@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>原料介绍</title>
     <link rel="stylesheet" href="../assets/css/ingredient-style.css">
+    <style>
+        .to-qi-arrow-btn {
+            position: fixed;
+            right: 32px;
+            bottom: 32px;
+            z-index: 1000;
+            background: rgba(0,0,0,0.6);
+            border: none;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .to-qi-arrow-btn:hover {
+            background: rgba(198,125,245,0.8);
+        }
+        .to-qi-arrow-btn svg {
+            width: 32px;
+            height: 32px;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2.5;
+        }
+    </style>
 </head>
 <body>
     <!-- 左上角文字和退出箭头 -->
@@ -77,6 +106,9 @@
         </div>
 
         <div class="floral-title">floral 花香调</div>
+        <button class="to-qi-arrow-btn" onclick="window.location.href='满.html?from=原料介绍1.html'" title="香水推荐">
+            <svg viewBox="0 0 48 48"><line x1="12" y1="24" x2="36" y2="24"/><polyline points="30,18 36,24 30,30"/></svg>
+        </button>
     </div>
 </body>
 </html>
